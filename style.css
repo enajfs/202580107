@@ -27,7 +27,7 @@ p{
 
 header{
     background-color: rgb(218, 123, 123);
-    padding: 5px;
+    padding: 10px 30px;
     display: flex;
     justify-content: space-between;
 }
