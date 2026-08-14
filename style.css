@@ -23,10 +23,14 @@ p{
 .nav{
     color: black;
     font-size: 16px;
+}
+
+header{
+    background-color: rgb(218, 123, 123);
+    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
-
 .cta-btn{
     color: rgb(68, 19, 19);
     font-size: 16px;
