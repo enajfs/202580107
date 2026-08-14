@@ -1,6 +1,6 @@
 
 h1 {
-    color: rgb(218, 123, 123);
+    color: white;
     font-size: 32px;
 }
 
@@ -27,7 +27,7 @@ p{
 
 header{
     background-color: rgb(218, 123, 123);
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
 }
