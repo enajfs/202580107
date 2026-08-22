@@ -85,3 +85,11 @@ footer{
     color: rgb(218, 123, 123);
     font-size: 16px;
 }
+
+.add-to-cart-btn{
+    background-color: rgb(218, 123, 123);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
