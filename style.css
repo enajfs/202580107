@@ -67,3 +67,21 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
+
+.product-card{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.product-description{
+    color: black;
+    font-size: 14px;
+}
+
+.product-price {
+    color: rgb(218, 123, 123);
+    font-size: 16px;
+}
