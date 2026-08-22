@@ -25,6 +25,11 @@ p{
     font-size: 16px;
 }
 
+.footer-nav{
+    color: white;
+    font-size: 16px;
+}
+
 header{
     background-color: rgb(218, 123, 123);
     padding: 10px 30px;
@@ -54,3 +59,11 @@ header{
     text-align: center;
     margin-bottom: 20px;
 }   
+
+footer{
+    background-color: rgb(1, 1, 1);
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
