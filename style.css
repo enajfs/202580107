@@ -39,3 +39,11 @@ header{
 .background1{
     color: rgb(68, 19, 19);
 }
+
+.header-title { 
+    
+    color: rgb(68, 19, 19);
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+}
