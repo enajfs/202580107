@@ -109,3 +109,7 @@ footer{
     margin: 10px;
     text-align: center;
 }
+
+.section-light {
+     background-color: #fdf0f0; 
+}
