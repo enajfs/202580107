@@ -198,3 +198,13 @@ footer{
   border-radius: 100px;
   border: none;
 }
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
