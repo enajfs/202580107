@@ -1,3 +1,12 @@
+:root {
+    --text-dark: #441313;
+    --white: #ffffff;
+    --border: #cccccc;
+    --transition: 0.3s ease;
+    --cobalt: rgb(218, 123, 123);
+}
+
+
 
 h1 {
     color: white;
