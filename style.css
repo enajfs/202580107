@@ -53,11 +53,12 @@ header{
 .view-all-btn{
     background-color: rgb(218, 123, 123);
     color: white;
-    border: none;
+    border: 10px;
     padding: 10px 20px;
     cursor: pointer;
     display: inline-block;
     align-self: center;
+    margin-top: 20px;
 }
 
 .background1{
