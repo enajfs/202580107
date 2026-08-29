@@ -50,6 +50,14 @@ header{
     color: rgb(68, 19, 19);
     font-size: 16px;
 }
+.view-all-btn{
+    background-color: rgb(218, 123, 123);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
 .background1{
     color: rgb(68, 19, 19);
 }
