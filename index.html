@@ -6,96 +6,73 @@
         <title>Baby Jane Seño</title>
         <link rel="stylesheet" href="style.css">
      </head>
-
+     
 <body>
     <header>
         <h1>Vonita Pastry</h1>
             <nav>
-                <a href="index.html" class ="nav">Home</a>
-                <a href="shop.html" class ="nav">Shop</a> 
+                <a href="homepage.html" class ="nav">Home</a>
                 <a href="about.html" class ="nav">About</a> 
                 <a href="contact.html" class ="nav">Contact Us</a>
-                <a href="shop.html" class="nav-cta">Shop Now</a>
+                <a href="login.html"class ="nav">Log In</a>
+                <a href="registration.html"class ="nav">Sign Up</a>
             </nav>
 
-            <button class="hamburger" aria-label="Menu">
-           <span></span><span></span><span></span>
+    <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
            </button>
           </nav>
             <div class="mobile-menu">
-                 <a href="index.html" class ="nav">Home</a>
-                <a href="shop.html" class ="nav">Shop</a> 
                 <a href="about.html" class ="nav">About</a> 
                 <a href="contact.html" class ="nav">Contact Us</a>
-                <a href="shop.html" class="nav-cta">Shop Now</a>
+                <a href="login.html"class ="nav">Log In</a>
+                <a href="registration.html"class ="nav">Sign Up</a>
             </div>
+        
     </header>
 
- <main>
-        <section class="section-white">
-            <h1 class="header-title">Welcome back to Vonita Pastry!</h1>
-
-                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">      
-            <div class="history-card">
-                <h4>Pending Orders</h4>
-                <p style="font-size: 56px;" text-align="center">03</p>
-                <p style="font-size: 14px;" text-align="center">View your current orders that are being processed or awaiting delivery.</p>
-            </div>
-            <div class="history-card">
-                <h4>Completed Orders</h4>
-                <p style="font-size: 56px;" text-align="center">05</p>
-                <p style="font-size: 14px;" text-align="center">View your completed orders and download receipts.</p>
-            </div>
-            <div class="history-card">
-                <h4>Cancelled Orders</h4>
-                <p style="font-size: 56px;" text-align="center">02</p>
-                <p style="font-size: 14px;" text-align="center">View your cancelled orders and reasons for cancellation.</p>
-            </div>
-            <div class="history-card">
-                <h4>Order History</h4>
-                <p style="font-size: 56px;" text-align="center">08</p>
-                <p style="font-size: 14px;" text-align="center">View your complete order history and track your past purchases.</p>
-            </div>
-            </div>
-        </section>
-
-        
-           
-
-      
-
-        <section class="section-light">
+<main>
+<section class="section-white">
+            <h1 class="header-title">Welcome to Vonita Pastry!</h1>
+    <div class="intro-text">
+                    <p class="header-description">We are a family-owned bakery that specializes in creating delicious pastries and desserts. Our mission is to provide our customers with high-quality baked goods made from the finest ingredients. We take pride in our craftsmanship and attention to detail, ensuring that every pastry we create is a work of art.</p>
+                    <p class="header-description">At Vonita Pastry, we believe that every bite should be a delightful experience. From classic favorites to innovative creations, our menu offers a wide variety of options to satisfy every sweet tooth. Whether you're looking for a decadent chocolate cake, a flaky croissant, or a refreshing fruit tart, we have something for everyone.</p>
+                    <p class="header-description">We also offer custom orders for special occasions, such as birthdays, weddings, and corporate events. Our team of skilled bakers will work closely with you to create a personalized dessert that perfectly matches your vision. We are committed to making your celebrations even sweeter with our delectable treats.</p>
+                    <p class="header-description">Thank you for choosing Vonita Pastry. We look forward to serving you and making your dessert dreams come true!</p>
+                </div>
+</section>
+         <section class="section-light">
                 <h2 style="text-align: center;">Our <em>Products</em></h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">      
-                <div class="product-card">
+            <div class="carousel-track" style="display: flex; overflow-x: auto; scroll-snap-type: x mandatory;" >      
+                <div class="product-card" style="scroll-snap-align: start; flex: 0 0 auto;">
                     <img src="images/classic-vanilla-bean-cake.png" alt="Classic Vanilla Bean Cake">
                     <p>Classic Vanilla Bean Cake</p>
                     <p class="product-description">Experience the soft, fluffy texture of our Classic Vanilla Bean Cake, layered with rich vanilla buttercream for a timeless treat.</p>
                     <p class="product-price">Php250.00</p> 
                     <button class="add-to-cart-btn">Add to Cart</button>
                 </div>
-                <div class="product-card">
+                <div class="product-card" style="scroll-snap-align: start; flex: 0 0 auto;">
                     <img src="images/rich-chocolate-fudge-cake.png" alt="Rich Chocolate Fudge Cake">    
                     <p>Rich Chocolate Fudge Cake</p>
                     <p class="product-description">Savor the rich, moist layers of our Chocolate Fudge Cake, filled with luscious chocolate fudge for a decadent treat.</p>
                     <p class="product-price">Php280.00</p>
                     <button class="add-to-cart-btn">Add to Cart</button>
                 </div>
-                <div class="product-card">
+                <div class="product-card" style="scroll-snap-align: start; flex: 0 0 auto;">
                     <img src="images/red-velvet-delight.png" alt="Red Velvet Delight">
                     <p>Red Velvet Delight</p>
                     <p class="product-description">Experience the rich, moist texture of our Red Velvet Delight, layered with cream cheese frosting for a truly indulgent treat.</p>
                     <p class="product-price">Php260.00</p>
                     <button class="add-to-cart-btn">Add to Cart</button>
                 </div>
-                <div class="product-card">
+                <div class="product-card" style="scroll-snap-align: start; flex: 0 0 auto;">
                     <img src="images/ube-cheesecake-fusion.png" alt="Ube Cheesecake Fusion">
                     <p>Ube Cheesecake Fusion</p>
                     <p class="product-description">A delightful fusion of the beloved Filipino ube (purple yam) with a creamy cheesecake base, creating a unique and flavorful dessert.</p>
                     <p class="product-price">Php270.00</p>
                     <button class="add-to-cart-btn">Add to Cart</button>
                 </div>
-                <div class="product-card">
+                <div class="product-card" style="scroll-snap-align: start; flex: 0 0 auto;">
                     <img src="images/fruit-medley-cake.png" alt="Fruit Medley Cake">
                     <p>Fruit Medley Cake</p>
                     <p class="product-description">A refreshing take on the classic cake, featuring a light sponge cake topped with a colorful assortment of fresh, seasonal fruits.</p>
@@ -103,72 +80,68 @@
                     <button class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
-
-            <button class="view-all-btn" onclick="window.location.href='shop.html'">View All Products</button>
-        </section>
-    
-        <section class="section-white">
-             <h2>Why <em>Choose</em> Vonita?</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">      
-                <div class="reason-card">
-                    <p>Made with premium, locally-sourced ingredients</p>
-                </div>
-                <div class="reason-card">
-                    <p>Customizable designs for any occasion</p>
-                </div>
-                <div class="reason-card">
-                    <p>On-time delivery, every time</p>
-                </div>
-                <div class="reason-card">
-                    <p>Affordable pricing without compromising quality</p>
-                </div>
-                <div class="reason-card">
-                    <p>Trusted by hundreds of happy customers</p>
-                </div>
-            </div>
         </section>
     
         <section class="section-light">
-            <h2>What <em>Customers</em> says</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">      
-                    <div class="review-card">
-                        <p>"The cake was even more beautiful in person. Perfect for my daughter's birthday!" — Maria S.</p>
-                    </div>
-                    <div class="review-card">
-                        <p>"Super delicious and the delivery was on time. Will order again!" — Carlo D.</p>
-                    </div>
-                    <div class="review-card">
-                        <p>"Best red velvet I've had in Puerto Princesa." — Angela R.</p>
-                    </div>
-                    <div class="review-card">
-                        <p>"Easy ordering process, and the customization options are amazing." — Joseph T.</p>
-                    </div>
-                    <div class="review-card">
-                        <p>"Exceeded my expectations for our anniversary cake." — Liza M.</p>
-                </div>
+             <h2>Why <em>Choose</em> Vonita?</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">      
+            <div class="reason-card">
+                <p>Made with premium, locally-sourced ingredients</p>
             </div>
+            <div class="reason-card">
+                <p>Customizable designs for any occasion</p>
+            </div>
+            <div class="reason-card">
+                <p>On-time delivery, every time</p>
+            </div>
+            <div class="reason-card">
+                <p>Affordable pricing without compromising quality</p>
+            </div>
+            <div class="reason-card">
+                <p>Trusted by hundreds of happy customers</p>
+            </div>
+        </div>
         </section>
+    
+        <section class="section-white">
+            <h2>What <em>Customers</em> says</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">      
+                <div class="review-card">
+                    <p>"The cake was even more beautiful in person. Perfect for my daughter's birthday!" — Maria S.</p>
+                </div>
+                <div class="review-card">
+                    <p>"Super delicious and the delivery was on time. Will order again!" — Carlo D.</p>
+                </div>
+                <div class="review-card">
+                    <p>"Best red velvet I've had in Puerto Princesa." — Angela R.</p>
+                </div>
+                <div class="review-card">
+                    <p>"Easy ordering process, and the customization options are amazing." — Joseph T.</p>
+                </div>
+                <div class="review-card">
+                    <p>"Exceeded my expectations for our anniversary cake." — Liza M.</p>
+                </div>
+        </div>
+        </section>
+        
     
         <div>
             <a href="shop.html" class = "cta-btn">Shop Now</a>
         </div>
-       <section class="section-white">
-            <div>
-                <h2>Frequently <em>Asked Questions</em></h2>
-                <p>How far in advance should I order? We recommend booking at least 3 days before your event.</p>
-                <p>Do you deliver outside Puerto Princesa? Currently, we deliver within Puerto Princesa City only.</p>
-                <p>Can I customize the cake design? Yes, you can request custom designs during checkout.</p>
-                <p>What payment methods do you accept? We accept cash on delivery and online payment options.</p>
-                <p>Can I cancel or reschedule my order? Yes, please refer to our Cancellation Policy for details.</p>
-            </div>
-       </section>    
-    </main>
+    
+        <div class="section-light">
+            <h2>Frequently <em>Asked Questions</em></h2>
+            <p>How far in advance should I order? We recommend booking at least 3 days before your event.</p>
+            <p>Do you deliver outside Puerto Princesa? Currently, we deliver within Puerto Princesa City only.</p>
+            <p>Can I customize the cake design? Yes, you can request custom designs during checkout.</p>
+            <p>What payment methods do you accept? We accept cash on delivery and online payment options.</p>
+            <p>Can I cancel or reschedule my order? Yes, please refer to our Cancellation Policy for details.</p>
+        </div>      
+   </main>
+   <script src="script.js"></script>
+</body>
 
-
-    <script src="script.js"></script>
- </body>
-
-     <footer>
+   <footer>
         <a href="shop.html" class="footer-nav">Shop</a>
         <a href="about.html" class="footer-nav">About</a>
         <a href="faqs.html" class="footer-nav">FAQs</a>
@@ -176,5 +149,6 @@
         <a href="privacy-policy.html" class="footer-nav">Privacy Policy</a>
         <a href="terms-of-service.html" class="footer-nav">Terms of Service</a>
     </footer>
+
 
 </html>
