@@ -1,16 +1,20 @@
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 
+if (hamburger) {
 hamburger.addEventListener('click', function() {
     hamburger.classList.toggle('open');
     mobileMenu.classList.toggle('open');
 });
+}
 
 
 const carousel = document.querySelector('.carousel-track');
 let isDragging = false;
 let startX;
 let scrollLeftStart;
+
+if (carousel) {
 
 carousel.addEventListener('mousedown', function(e) {
     isDragging = true;
@@ -31,6 +35,7 @@ carousel.addEventListener('mouseup', function() {
 carousel.addEventListener('mouseleave', function() {
     isDragging = false;
 });
+}
 
 
 document.querySelectorAll('.tab-btn').forEach(button => {
