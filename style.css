@@ -219,8 +219,44 @@ footer{
 
 
 
+.category-tabs { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px; 
+    border-bottom: 1px solid #ccc;
+}
 
+.tab-btn { 
+    background: none; 
+    border: none; 
+    font-size: 16px; 
+    color: grey; 
+    cursor: pointer; 
+    padding-bottom: 8px;
+}
+.tab-btn.active { 
+    color: rgb(68, 19, 19); 
+    border-bottom: 2px solid rgb(68, 19, 19); 
+    font-weight: bold;
+}
 
+.tab-arrow-left {
+    background: none; 
+    border: none; 
+    font-size: 20px; 
+    cursor: pointer; 
+    color: grey;
+}
+
+.tab-arrow-right { 
+    background: none; 
+    border: none; 
+    font-size: 20px; 
+    cursor: pointer; 
+    color: grey;
+}
 @media (max-width: 768px) {
     nav {
         display: none;
@@ -230,3 +266,5 @@ footer{
         display: flex;
     }
 }
+
+
