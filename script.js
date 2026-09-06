@@ -31,3 +31,18 @@ carousel.addEventListener('mouseup', function() {
 carousel.addEventListener('mouseleave', function() {
     isDragging = false;
 });
+
+
+document.querySelectorAll('.tab-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        document.querySelectorAll('.category-section').forEach(section => {
+            section.style.display = 'none';
+        });
+
+        document.getElementById(category + '-section').style.display = 'block';
+    });
+});
