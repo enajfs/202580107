@@ -328,13 +328,18 @@ footer{
 .dot.active { 
     background-color: rgb(218, 123, 123);
 }
-.hero-section { 
+.hero-section1 { 
     background-image: url('images/vonita-pastry-shopfront.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
 }
-
+.hero-section2 {
+    background-image: url('images/vonita-pastry-cashier.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
 
 @media (max-width: 768px) {
     nav {
