@@ -51,6 +51,26 @@ cards.forEach((card, index) => {
     dotsContainer.appendChild(dot);
 });
 
+function updateActiveDot() {
+    const dots = dotsContainer.querySelectorAll('.dot');
+    let closestIndex = 0;
+    let closestDistance = Infinity;
+
+    cards.forEach((card, index) => {
+        const distance = Math.abs(card.offsetLeft - carousel.scrollLeft);
+        if (distance < closestDistance) {
+            closestDistance = distance;
+            closestIndex = index;
+        }
+    });
+
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === closestIndex);
+    });
+}
+
+carousel.addEventListener('scroll', updateActiveDot);
+
 }
 
 
