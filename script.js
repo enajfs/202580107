@@ -35,6 +35,22 @@ carousel.addEventListener('mouseup', function() {
 carousel.addEventListener('mouseleave', function() {
     isDragging = false;
 });
+
+const dotsContainer = document.querySelector('.carousel-dots');
+const cards = carousel.querySelectorAll('.product-card');
+
+cards.forEach((card, index) => {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if (index === 0) dot.classList.add('active');
+
+    dot.addEventListener('click', () => {
+        carousel.scrollTo({ left: card.offsetLeft, behavior: 'smooth' });
+    });
+
+    dotsContainer.appendChild(dot);
+});
+
 }
 
 

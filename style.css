@@ -287,6 +287,25 @@ footer{
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     text-align: center;
 }
+.carousel-dots { 
+    display: flex; 
+    justify-content: center; 
+    gap: 8px; 
+    margin-top: 15px;
+}
+.dot { 
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%; 
+    background-color: #ccc; 
+    cursor: pointer;
+}
+
+.dot.active { 
+    background-color: rgb(218, 123, 123);
+}
+
+
 @media (max-width: 768px) {
     nav {
         display: none;
