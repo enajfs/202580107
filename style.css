@@ -49,6 +49,13 @@ header{
 .cta-btn{
     color: rgb(68, 19, 19);
     font-size: 16px;
+    padding: 12px 28px; 
+    border-radius: 25px; 
+    background-color: rgb(218, 123, 123); 
+    color: white; 
+    text-decoration: none; 
+    display: inline-block; 
+    margin-top: 10px;
 }
 .view-all-btn{
     background-color: rgb(218, 123, 123);
@@ -258,6 +265,25 @@ footer{
     font-size: 20px; 
     cursor: pointer; 
     color: grey;
+}
+
+.hero-badge {
+    display: inline-block; 
+    background-color: rgb(218, 123, 123); 
+    color: white; 
+    padding: 6px 16px; 
+    border-radius: 20px; 
+    font-size: 14px; 
+    margin: 0 auto 10px auto;
+ }
+
+.intro-card { 
+    background-color: #fdf0f0; 
+    border-radius: 20px; 
+    padding: 30px; 
+    margin: 20px auto; 
+    max-width: 900px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 @media (max-width: 768px) {
     nav {
