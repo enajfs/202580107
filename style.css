@@ -328,7 +328,12 @@ footer{
 .dot.active { 
     background-color: rgb(218, 123, 123);
 }
-
+.hero-section { 
+    background-image: url('images/vonita-pastry-shopfront.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
 
 
 @media (max-width: 768px) {
