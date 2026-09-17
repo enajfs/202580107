@@ -347,6 +347,74 @@ footer{
     background-repeat: no-repeat;
 }
 
+.auth-main {
+    background-color: var(--bg-light);
+    min-height: calc(100vh - 68px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.auth-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+}
+.form-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+.auth-btn {
+    width: 100%;
+    background-color: rgb(218, 123, 123);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 13px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity var(--transition);
+}
+
+.auth-btn:hover {
+    opacity: 0.85;
+}
+
+.auth-link {
+    color: var(--cobalt);
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.auth-link:hover {
+    text-decoration: underline;
+}
+
+.auth-footer-text {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.auth-footer-text a {
+    color: var(--cobalt);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-footer-text a:hover {
+    text-decoration: underline;
+}
+
+
+
 @media (max-width: 768px) {
     nav {
         display: none;
