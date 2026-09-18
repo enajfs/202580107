@@ -19,10 +19,16 @@
 
 
 
-h2{
+.product-category {
     color: rgb(218, 123, 123);
-    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 46px;
+    font-family: 'Winkle';
+    -webkit-text-stroke: 0.1px white;
 }
+
+
 
 h4 {
     color: black;
