@@ -18,6 +18,23 @@ let startX;
 let scrollLeftStart;
 
 if (carousel) {
+if (prevButton) {
+    prevButton.addEventListener('click', function() {
+        carousel.scrollBy({
+            left: -carousel.clientWidth,
+            behavior: 'smooth'
+        });
+    });
+}
+
+if (nextButton) {
+    nextButton.addEventListener('click', function() {
+        carousel.scrollBy({
+            left: carousel.clientWidth,
+            behavior: 'smooth'
+        });
+    });
+}
 
 carousel.addEventListener('mousedown', function(e) {
     isDragging = true;
