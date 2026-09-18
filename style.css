@@ -1,3 +1,8 @@
+@font-face { 
+    font-family: 'Winkle';
+    src: url('fonts/Winkle-Regular.ttf') format('truetype');
+}
+
 :root {
     --text-dark: #441313;
     --white: #ffffff;
@@ -11,6 +16,7 @@
 h1 {
     color: white;
     font-size: 32px;
+    font-family: 'Winkle';
 }
 
 
