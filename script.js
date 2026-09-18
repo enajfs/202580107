@@ -96,9 +96,6 @@ carousel.addEventListener('scroll', updateActiveDot);
 
 }
 
-const tabArrowLeft = document.querySelector('.tab-arrow-left');
-const tabArrowRight = document.querySelector('.tab-arrow-right');
-
 const tabButtons = document.querySelectorAll('.tab-btn');
 const tabArrowLeft = document.querySelector('.tab-arrow-left');
 const tabArrowRight = document.querySelector('.tab-arrow-right');
@@ -158,4 +155,4 @@ if (tabArrowRight) {
 
         showCategory(currentIndex + 1);
     });
-});
+};
