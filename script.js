@@ -64,8 +64,8 @@ function updateActiveDot() {
         }
     });
 
-    if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 5) 
-        { closestIndex = cards.length - 1; }
+    if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10) 
+        { closestIndex = cards.length - 5; }
 
     dots.forEach((dot, index) => {
         dot.classList.toggle('active', index === closestIndex);
