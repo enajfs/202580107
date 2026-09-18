@@ -96,17 +96,66 @@ carousel.addEventListener('scroll', updateActiveDot);
 
 }
 
+const tabArrowLeft = document.querySelector('.tab-arrow-left');
+const tabArrowRight = document.querySelector('.tab-arrow-right');
 
-document.querySelectorAll('.tab-btn').forEach(button => {
+const tabButtons = document.querySelectorAll('.tab-btn');
+const tabArrowLeft = document.querySelector('.tab-arrow-left');
+const tabArrowRight = document.querySelector('.tab-arrow-right');
+
+function showCategory(index) {
+    if (index < 0) {
+        index = tabButtons.length - 1;
+    }
+
+    if (index >= tabButtons.length) {
+        index = 0;
+    }
+
+    tabButtons.forEach((button, i) => {
+        button.classList.toggle('active', i === index);
+    });
+
+    document.querySelectorAll('.category-section').forEach(section => {
+        section.style.display = 'none';
+    });
+
+    const category = tabButtons[index].getAttribute('data-category');
+    const targetSection = document.getElementById(category + '-section');
+
+    if (targetSection) {
+        targetSection.style.display = 'block';
+    }
+}
+
+
+// Click category tab
+tabButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
-        const category = button.getAttribute('data-category');
-        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+        showCategory(index);
+    });
+});
 
-        document.querySelectorAll('.category-section').forEach(section => {
-            section.style.display = 'none';
-        });
 
-        document.getElementById(category + '-section').style.display = 'block';
+// Click <
+if (tabArrowLeft) {
+    tabArrowLeft.addEventListener('click', () => {
+        const currentIndex = [...tabButtons].findIndex(
+            button => button.classList.contains('active')
+        );
+
+        showCategory(currentIndex - 1);
+    });
+}
+
+
+// Click >
+if (tabArrowRight) {
+    tabArrowRight.addEventListener('click', () => {
+        const currentIndex = [...tabButtons].findIndex(
+            button => button.classList.contains('active')
+        );
+
+        showCategory(currentIndex + 1);
     });
 });
