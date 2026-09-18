@@ -139,6 +139,13 @@ header{
     margin-bottom: 20px;
     font-family: 'Inter', sans-serif;
 }   
+.contact {
+    color: rgb(218, 123, 123);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'Winkle';
+}
 
 footer{
     background-color: rgb(1, 1, 1);
