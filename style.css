@@ -114,6 +114,22 @@ header{
     -webkit-text-stroke: 0.1px white;
 }
 
+.section-title1 {   
+    color: rgb(218, 123, 123);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 54px;
+    font-family: 'Winkle';
+}
+.section-title2 {   
+    color: rgb(218, 123, 123);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 54px;
+    font-family: 'Winkle';
+    -webkit-text-stroke: 0.1px white;
+}
+
 .header-description {
     color: black;
     font-size: 14px;
