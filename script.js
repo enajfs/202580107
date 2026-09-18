@@ -10,6 +10,9 @@ hamburger.addEventListener('click', function() {
 
 
 const carousel = document.querySelector('.carousel-track');
+const prevButton = document.querySelector('.carousel-prev');
+const nextButton = document.querySelector('.carousel-next');
+
 let isDragging = false;
 let startX;
 let scrollLeftStart;
