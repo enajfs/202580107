@@ -11,13 +11,12 @@
     --cobalt: rgb(218, 123, 123);
 }
 
-
-
-h1 {
+.hero-logo {
     color: white;
     font-size: 32px;
     font-family: 'Winkle';
 }
+
 
 
 h2{
@@ -111,10 +110,12 @@ header{
 
 .header-title { 
     
-    color: rgb(68, 19, 19);
-    font-size: 36px;
+    color: rgb(218, 123, 123);
     text-align: center;
     margin-top: 20px;
+    font-size: 54px;
+    font-family: 'Winkle';
+    -webkit-text-stroke: 0.1px white;
 }
 
 .header-description {
