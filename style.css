@@ -28,6 +28,14 @@
 
 }
 
+.product-title {
+     color: rgb(218, 123, 123);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Winkle';
+}
+
 
 
 h4 {
