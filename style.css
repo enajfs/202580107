@@ -41,9 +41,10 @@ nav {
 
 .nav {
     color: black;
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-family: 'Winkle';
 }
 
 .nav:hover {
@@ -63,7 +64,7 @@ nav {
     color:rgb(218, 123, 123); 
     text-decoration: none; 
     display: inline-block; 
-   
+    font-family: 'Winkle';
     text-align: center;
 }
 
@@ -87,6 +88,7 @@ header{
     display: inline-block; 
     margin-top: 10px;
     text-align: center;
+    font-family: 'Winkle';
 }
 
 .view-all-btn{
@@ -295,6 +297,7 @@ footer{
   padding: 0.75rem;
   border-radius: 100px;
   border: none;
+  font-family: 'Winkle';
 }
 
 
@@ -346,6 +349,7 @@ footer{
     border-radius: 20px; 
     font-size: 14px; 
     margin: 0 auto 10px auto;
+    font-family: 'Winkle';
  }
 
 .intro-card { 
