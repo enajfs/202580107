@@ -18,6 +18,11 @@
 }
 
 
+h3 {
+    color: black;
+    font-size: 36px;
+    font-family: 'Winkle', cursive;
+}
 h4 {
     color: black;
     font-size: 20px;
@@ -32,7 +37,7 @@ h5{
 
 p{
     color: black;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 body {
@@ -173,7 +178,7 @@ footer{
 
 .footer-columns {
     display: grid; 
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(5, 1fr); 
     gap: 30px;
     max-width: 1100px; 
     margin: 0 auto;
@@ -573,8 +578,8 @@ footer{
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 5px;
-    font-family: 'Winkle';
-    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
 }
 
 .faq-answer {
@@ -582,8 +587,8 @@ footer{
     font-weight: thin;
     margin-top: 20px;
     margin-bottom: 5px;
-    font-family: 'Winkle';
-    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
 }
 
 
