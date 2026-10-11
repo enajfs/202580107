@@ -6,9 +6,10 @@
 :root {
     --text-dark: #441313;
     --white: #ffffff;
+    --bg-light: #fdf7f7;
     --border: #cccccc;
     --transition: 0.3s ease;
-    --cobalt: rgb(218, 123, 123);
+    --primary: rgb(218, 123, 123);
 }
 
 .hero-logo {
@@ -445,133 +446,121 @@ footer{
     background-repeat: no-repeat;
 }
 
+
 .auth-main {
-    background-color: var(--bg-light);
-    min-height: calc(100vh - 68px);
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: calc(100vh - 68px);
     padding: 40px 20px;
+    background-color: var(--bg-light);
 }
-
 .auth-card {
-    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    background-color: var(--white);
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    padding: 40px;
-    max-width: 420px;
-    width: 100%;
     text-align: center;
 }
-
 .auth-card h3,
 .auth-card h4 {
     margin-top: 0;
     margin-bottom: 8px;
 }
-
 .auth-card > p {
-    font-size: 15px;
-    color: #555;
     margin-top: 0;
     margin-bottom: 24px;
+    color: #555;
+    font-size: 15px;
 }
-
 .form-group {
-    text-align: left;
     margin-bottom: 18px;
+    text-align: left;
 }
-
 .form-group label {
     display: block;
-    font-size: 14px;
-    color: var(--text-dark);
     margin-bottom: 6px;
+    color: var(--text-dark);
+    font-size: 14px;
     font-weight: bold;
 }
-
 .form-group input,
 .form-group textarea {
+    box-sizing: border-box;
     width: 100%;
     padding: 12px 14px;
-    font-size: 15px;
     border: 1px solid var(--border);
     border-radius: 8px;
     font-family: inherit;
+    font-size: 15px;
     transition: border-color var(--transition);
 }
-
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--cobalt);
+    border-color: var(--primary);
 }
-
 .form-group textarea {
     min-height: 90px;
     resize: vertical;
 }
-
 .form-check {
     display: flex;
     align-items: flex-start;
     gap: 8px;
-    text-align: left;
     margin-bottom: 20px;
     font-size: 14px;
+    text-align: left;
 }
-
 .form-check input {
     margin-top: 3px;
 }
-
 .form-check label {
     color: var(--text-dark);
 }
-
 .auth-btn {
+    box-sizing: border-box;
     width: 100%;
-    background-color: rgb(218, 123, 123);
-    color: white;
+    padding: 13px;
     border: none;
     border-radius: 8px;
-    padding: 13px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-family: inherit;
     font-size: 16px;
     cursor: pointer;
     transition: opacity var(--transition);
 }
-
 .auth-btn:hover {
     opacity: 0.85;
 }
-
 .auth-link {
-    color: var(--cobalt);
-    font-size: 14px;
-    text-decoration: none;
     display: inline-block;
     margin-bottom: 16px;
+    color: var(--primary);
+    font-size: 14px;
+    text-decoration: none;
 }
-
 .auth-link:hover {
     text-decoration: underline;
 }
-
 .auth-footer-text {
-    font-size: 14px;
     margin-top: 20px;
     margin-bottom: 0;
+    font-size: 14px;
 }
-
 .auth-footer-text a {
-    color: var(--cobalt);
-    text-decoration: none;
+    color: var(--primary);
     font-weight: bold;
+    text-decoration: none;
 }
-
 .auth-footer-text a:hover {
     text-decoration: underline;
 }
+
 
 .faq-question {
     color: rgb(218, 123, 123);
@@ -648,13 +637,13 @@ footer{
     padding: 20px;
 }
 
-form {
+.auth-section form {
     width: 100%;
-    max-width: 400px;         
+    max-width: 400px;
     background: white;
     padding: 30px;
     border-radius: 10px;
-    box-sizing: border-box;          
+    box-sizing: border-box;
     border: 1px solid #ccc;
 }
 
