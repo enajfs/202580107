@@ -655,6 +655,7 @@ form {
     padding: 30px;
     border-radius: 10px;
     box-sizing: border-box;          
+    border: 1px solid #ccc;
 }
 
 label { display: block; margin-bottom: 6px; }
@@ -664,7 +665,8 @@ input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-family: 'Poppins', sans-serif;         
+    font-family: 'Poppins', sans-serif;        
+    box-sizing: border-box; 
 }
 
 input:focus { outline: 2px solid rgb(218, 123, 123); border-color: rgb(218, 123, 123); }
@@ -676,7 +678,9 @@ button[type="submit"] {
     color: white;
     border: none;
     border-radius: 5px;
+    margin-top: 10px;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 button[type="submit"]:hover { background: rgb(180, 100, 100); }
 
