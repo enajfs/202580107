@@ -638,6 +638,48 @@ footer{
     border-radius: 10px;
     margin-top: 20px;
 }
+
+.auth-section {
+    min-height: 100vh;          
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;         
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;          
+}
+
+label { display: block; margin-bottom: 6px; }
+
+input {
+    width: 100%;               
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;         
+}
+
+input:focus { outline: 2px solid rgb(218, 123, 123); border-color: rgb(218, 123, 123); }
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: rgb(218, 123, 123);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="submit"]:hover { background: rgb(180, 100, 100); }
+
 @media (max-width: 768px) {
     nav { display: none; }
     .hamburger { display: flex; }
