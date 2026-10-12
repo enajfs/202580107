@@ -25,6 +25,7 @@ h3 {
     font-size: 36px;
     font-family: 'Winkle', cursive;
 }
+
 h4 {
     color: black;
     font-size: 20px;
@@ -63,6 +64,7 @@ nav {
 .nav:hover {
     color: white;
 }
+
 .footer-nav{
     color: white;
     font-size: 16px;
@@ -75,11 +77,13 @@ nav {
 .footer-nav:hover{
     color: rgb(218, 123, 123);
 }
+
 .footer-bottom{ 
     border-top: 1px solid #444; 
     margin-top: 30px; padding-top: 
     20px; text-align: center;
 }
+
 .logo-block {
     display: flex;
     align-items: center;
@@ -95,6 +99,7 @@ nav {
 .hero-logo {
     margin: 0;
 }
+
 .nav-cta{
 
     color: rgb(68, 19, 19);
@@ -108,7 +113,6 @@ nav {
     font-family: 'Winkle';
     text-align: center;
 }
-
 
 header{
     background-color: rgb(218, 123, 123);
@@ -164,6 +168,7 @@ header{
     font-size: 54px;
     font-family: 'Winkle';
 }
+
 .section-title2 {   
     color: rgb(218, 123, 123);
     text-align: center;
@@ -179,7 +184,8 @@ header{
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Inter', sans-serif;
-}   
+}  
+
 .contact {
     color: rgb(218, 123, 123);
     text-align: center;
@@ -204,13 +210,13 @@ footer{
     color: white; 
     margin-bottom: 15px;
 }
+
 .product-category {
     color: rgb(218, 123, 123);
     text-align: center;
     margin-top: 20px;
     font-size: 46px;
     font-family: 'Winkle';
-
 }
 
 .product-title {
@@ -230,6 +236,7 @@ footer{
     width: 280px;
     flex-shrink: 0;
 }
+
 .product-card img{
     width: 100%;
     height: 250px;
@@ -265,12 +272,14 @@ footer{
     width: 250px;
     flex-shrink: 0;
 }
+
 .reason-card img{
     width: 100%;
     height: 200px;
     border-radius: 5px;
     object-fit: cover;
 }
+
 .review-card{
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -329,9 +338,18 @@ footer{
   border-radius: 2px;
   transition: var(--transition);
 }
-.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.hamburger.open span:nth-child(2) { opacity: 0; }
-.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.hamburger.open span:nth-child(1) { 
+    transform: translateY(7px) rotate(45deg); 
+}
+
+.hamburger.open span:nth-child(2) { 
+    opacity: 0; 
+}
+
+.hamburger.open span:nth-child(3) {
+     transform: translateY(-7px) rotate(-45deg); 
+}
 
 .mobile-menu {
   display: none;
@@ -344,7 +362,11 @@ footer{
   flex-direction: column;
   gap: 1.25rem;
 }
-.mobile-menu.open { display: flex; }
+
+.mobile-menu.open { 
+    display: flex; 
+}
+
 .mobile-menu a {
   font-size: 1.05rem;
   font-weight: 500;
@@ -354,7 +376,11 @@ footer{
   border-bottom: 1px solid var(--border);
   transition: color var(--transition);
 }
-.mobile-menu a:hover { color: var(--cobalt); }
+
+.mobile-menu a:hover { 
+    color: var(--cobalt); 
+}
+
 .mobile-menu a.nav-cta {
   background: var(--cobalt);
   color: var(--white);
@@ -364,8 +390,6 @@ footer{
   border: none;
   font-family: 'Winkle';
 }
-
-
 
 .category-tabs { 
     display: flex; 
@@ -384,6 +408,7 @@ footer{
     cursor: pointer; 
     padding-bottom: 8px;
 }
+
 .tab-btn.active { 
     color: rgb(68, 19, 19); 
     border-bottom: 2px solid rgb(68, 19, 19); 
@@ -426,12 +451,14 @@ footer{
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     text-align: center;
 }
+
 .carousel-dots { 
     display: flex; 
     justify-content: center; 
     gap: 8px; 
     margin-top: 15px;
 }
+
 .dot { 
     width: 10px; 
     height: 10px; 
@@ -443,25 +470,27 @@ footer{
 .dot.active { 
     background-color: rgb(218, 123, 123);
 }
+
 .hero-section1 { 
     background-image: url('images/vonita-pastry-shopfront.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
 }
+
 .hero-section2 {
     background-image: url('images/vonita-pastry-cashier.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
 }
+
 .hero-section3 { 
     background-image: url('images/vonita-pastry-customer.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
 }
-
 
 .auth-main {
     display: flex;
@@ -471,6 +500,7 @@ footer{
     padding: 40px 20px;
     background-color: var(--bg-light);
 }
+
 .auth-card {
     box-sizing: border-box;
     width: 100%;
@@ -481,21 +511,25 @@ footer{
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     text-align: center;
 }
+
 .auth-card h3,
 .auth-card h4 {
     margin-top: 0;
     margin-bottom: 8px;
 }
+
 .auth-card > p {
     margin-top: 8px;
     margin-bottom: 24px;
     color: #555;
     font-size: 15px;
 }
+
 .form-group {
     margin-bottom: 18px;
     text-align: left;
 }
+
 .form-group label {
     display: block;
     margin-bottom: 6px;
@@ -503,6 +537,7 @@ footer{
     font-size: 14px;
     font-weight: bold;
 }
+
 .form-group input,
 .form-group textarea {
     box-sizing: border-box;
@@ -514,15 +549,18 @@ footer{
     font-size: 15px;
     transition: border-color var(--transition);
 }
+
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary);
 }
+
 .form-group textarea {
     min-height: 90px;
     resize: vertical;
 }
+
 .form-check {
     display: flex;
     align-items: flex-start;
@@ -531,13 +569,16 @@ footer{
     font-size: 14px;
     text-align: left;
 }
+
 .form-check input {
     margin-top: 3px;
     width: auto;
 }
+
 .form-check label {
     color: var(--text-dark);
 }
+
 .auth-btn {
     box-sizing: border-box;
     width: 100%;
@@ -551,9 +592,11 @@ footer{
     cursor: pointer;
     transition: opacity var(--transition);
 }
+
 .auth-btn:hover {
     opacity: 0.85;
 }
+
 .auth-link {
     display: inline-block;
     margin-bottom: 16px;
@@ -561,36 +604,42 @@ footer{
     font-size: 14px;
     text-decoration: none;
 }
+
 .auth-link:hover {
     text-decoration: underline;
 }
+
 .auth-footer-text {
     margin-top: 30px;
     margin-bottom: 0;
     font-size: 14px;
 }
+
 .auth-footer-text a {
     color: var(--primary);
     font-weight: bold;
     text-decoration: none;
 }
+
 .auth-footer-text a:hover {
     text-decoration: underline;
 }
-
 
 .faq-section {
     padding: 70px 20px;
     background-color: #fffafa;
 }
+
 .faq-container {
     max-width: 800px;
     margin: 0 auto;
 }
+
 .faq-section .section-title1 {
     text-align: center;
     margin-bottom: 12px;
 }
+
 .faq-subtitle {
     text-align: center;
     color: #777;
@@ -599,11 +648,13 @@ footer{
     line-height: 1.7;
     margin: 0 auto 35px;
 }
+
 .faq-list {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
+
 .faq-item {
     background-color: #fff;
     border: 1px solid #f0dddd;
@@ -611,13 +662,16 @@ footer{
     padding: 0 20px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 .faq-item:hover {
     border-color: #da7b7b;
 }
+
 .faq-item[open] {
     border-color: #da7b7b;
     box-shadow: 0 4px 14px rgba(218, 123, 123, 0.08);
 }
+
 .faq-question {
     color: #b95f6b;
     font-weight: 600;
@@ -629,9 +683,11 @@ footer{
     position: relative;
     list-style: none;
 }
+
 .faq-question::-webkit-details-marker {
     display: none;
 }
+
 .faq-question::after {
     content: "+";
     position: absolute;
@@ -642,9 +698,11 @@ footer{
     font-size: 24px;
     font-weight: 400;
 }
+
 .faq-item[open] .faq-question::after {
     content: "−";
 }
+
 .faq-answer {
     color: #555;
     font-weight: 400;
@@ -653,24 +711,6 @@ footer{
     line-height: 1.8;
     margin: 0;
     padding: 0 0 20px;
-}
-@media (max-width: 600px) {
-    .faq-section {
-        padding: 45px 16px;
-    }
-    .faq-item {
-        padding: 0 16px;
-    }
-    .faq-question {
-        font-size: 14px;
-        padding: 17px 28px 17px 0;
-    }
-    .faq-answer {
-        font-size: 13px;
-    }
-    .faq-subtitle {
-        font-size: 13px;
-    }
 }
 
 #contact h2 { text-align: center; }
@@ -688,12 +728,29 @@ footer{
     align-items: start;
 }
 
-.contact-item h4 { color: rgb(68, 19, 19); margin-bottom: 4px; }
-.contact-item p { margin-top: 0; margin-bottom: 16px; }
-.contact-info a { color: rgb(218, 123, 123); text-decoration: none; }
-.contact-info a:hover { color: rgb(68, 19, 19); }
+.contact-item h4 { 
+    color: rgb(68, 19, 19); 
+    margin-bottom: 4px; 
+}
 
-.contact-right label { display: block; margin-bottom: 6px; }
+.contact-item p { 
+    margin-top: 0; 
+    margin-bottom: 16px; 
+}
+
+.contact-info a { 
+    color: rgb(218, 123, 123); 
+    text-decoration: none; 
+}
+
+.contact-info a:hover { 
+    color: rgb(68, 19, 19); 
+}
+
+.contact-right label { 
+    display: block; margin-bottom: 6px; 
+}
+
 .contact-right input,
 .contact-right textarea {
     width: 100%;
@@ -704,6 +761,7 @@ footer{
     font-family: inherit;
     box-sizing: border-box;
 }
+
 .contact-right button {
     background-color: rgb(218, 123, 123);
     color: white;
@@ -740,7 +798,10 @@ footer{
     border: 1px solid #ccc;
 }
 
-label { display: block; margin-bottom: 6px; }
+label { 
+    display: block; 
+    margin-bottom: 6px; 
+}
 
 input {
     width: 100%;               
@@ -751,7 +812,10 @@ input {
     box-sizing: border-box; 
 }
 
-input:focus { outline: 2px solid rgb(218, 123, 123); border-color: rgb(218, 123, 123); }
+input:focus { 
+    outline: 2px solid rgb(218, 123, 123); 
+    border-color: rgb(218, 123, 123); 
+}
 
 button[type="submit"] {
     width: 100%;
@@ -764,6 +828,7 @@ button[type="submit"] {
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
 }
+
 button[type="submit"]:hover { background: rgb(180, 100, 100); }
 
 @media (max-width: 768px) {
@@ -777,5 +842,24 @@ button[type="submit"]:hover { background: rgb(180, 100, 100); }
     }
     .auth-card {
         padding: 28px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .faq-section {
+        padding: 45px 16px;
+    }
+    .faq-item {
+        padding: 0 16px;
+    }
+    .faq-question {
+        font-size: 14px;
+        padding: 17px 28px 17px 0;
+    }
+    .faq-answer {
+        font-size: 13px;
+    }
+    .faq-subtitle {
+        font-size: 13px;
     }
 }
