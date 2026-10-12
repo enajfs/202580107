@@ -16,6 +16,7 @@
     color: white;
     font-size: 32px;
     font-family: 'Winkle';
+    align-items: left;
 }
 
 
@@ -78,6 +79,21 @@ nav {
     border-top: 1px solid #444; 
     margin-top: 30px; padding-top: 
     20px; text-align: center;
+}
+.logo-block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.hero-logo {
+    margin: 0;
 }
 .nav-cta{
 
