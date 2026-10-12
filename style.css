@@ -16,7 +16,7 @@
     color: white;
     font-size: 32px;
     font-family: 'Winkle';
-    align-items: left;
+    text-align: left;
 }
 
 
@@ -96,10 +96,6 @@ nav {
     object-fit: contain;
 }
 
-.hero-logo {
-    margin: 0;
-}
-
 .nav-cta{
 
     color: rgb(68, 19, 19);
@@ -123,8 +119,9 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 96%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    width: 100%;
 }
 
 
@@ -145,7 +142,7 @@ header{
 .view-all-btn{
     background-color: rgb(218, 123, 123);
     color: white;
-    border: 10px;
+    border: 1px solid #ccc;
     padding: 10px 20px;
     cursor: pointer;
     display: inline-block;
@@ -233,17 +230,12 @@ footer{
     font-family: 'Winkle';
 }
 
-.hero-section2 {
-    padding: 60px 20px;
-}
+
 .dashboard-container {
     max-width: 1200px;
     margin: 0 auto;
 }
-.header-title {
-    text-align: center;
-    margin-bottom: 35px;
-}
+
 .dashboard-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -596,6 +588,7 @@ footer{
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
+    padding: 60px 20px;
 }
 
 .hero-section3 { 
