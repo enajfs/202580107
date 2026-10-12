@@ -58,7 +58,7 @@ nav {
     font-size: 18px;
     text-decoration: none;
     transition: color 0.3s ease;
-    font-family: 'Winkle';
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav:hover {
