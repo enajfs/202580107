@@ -227,6 +227,25 @@ footer{
     font-family: 'Winkle';
 }
 
+.dashboard-card{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 280px;
+    flex-shrink: 0;
+    background-color: white;
+}
+
+.dashboard-title {
+     color: rgb(218, 123, 123);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .product-card{
     border: 1px solid #ccc;
     border-radius: 5px;
