@@ -280,14 +280,68 @@ footer{
     object-fit: cover;
 }
 
-.review-card{
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
+.review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    border: 1px solid #f0dddd;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 4px 16px rgba(70, 35, 35, 0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(70, 35, 35, 0.08);
+}
+
+.reviews-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.hero-section3 .section-title2 {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    -webkit-text-stroke: 0.1px white;
+    margin-bottom: 12px;
+}
+.reviews-subtitle {
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0 auto 38px;
+}
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+.review-stars {
+    color: #d49a45;
+    font-size: 19px;
+    letter-spacing: 3px;
+    margin: 0 0 18px;
+}
+.review-text {
+    color: #484040;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.9;
+    margin: 0 0 22px;
+    flex-grow: 1;
+}
+.review-author {
+    color: #b95f6b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto 0 0;
+    padding-top: 16px;
+    border-top: 1px solid #f3e7e7;
+    width: 100%;
 }
 
 .section-light {
@@ -860,6 +914,31 @@ button[type="submit"]:hover { background: rgb(180, 100, 100); }
         font-size: 13px;
     }
     .faq-subtitle {
+        font-size: 13px;
+    }
+}
+@media (max-width: 900px) {
+    .reviews-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+}
+@media (max-width: 600px) {
+    .hero-section3 {
+        padding: 45px 16px;
+    }
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .review-card {
+        padding: 22px;
+    }
+    .reviews-subtitle {
+        font-size: 13px;
+        margin-bottom: 28px;
+    }
+    .review-text {
         font-size: 13px;
     }
 }
