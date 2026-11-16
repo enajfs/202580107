@@ -1,3 +1,7 @@
+<?php
+require "auth.php";
+require_login();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -21,7 +25,8 @@
                 <a href="#order" class ="nav">My Orders</a> 
                 <a href="index.html#about" class ="nav">About</a> 
                 <a href="index.html#contact" class ="nav">Contact Us</a>
-                <a href="shop.html" class="nav-cta">Shop Now</a>
+                <a href="shop.php" class="nav-cta">Shop Now</a>
+                <a href="logout.php" class ="nav">Log Out</a>
             </nav>
 
             <button class="hamburger" aria-label="Menu">
@@ -33,14 +38,15 @@
                 <a href="#order" class ="nav">My Orders</a> 
                 <a href="index.html#about" class ="nav">About</a> 
                 <a href="index.html#contact" class ="nav">Contact Us</a>
-                <a href="shop.html" class="nav">Shop Now</a>
+                <a href="shop.php" class="nav">Shop Now</a>
+                <a href="logout.php" class ="nav">Log Out</a>
             </div>
     </header>
 
  <main>
         <section class="section-white hero-section2" id="order">
     <div class="dashboard-container">
-        <h1 class="header-title">Welcome back to Vonita Pastry!</h1>
+        <h1 class="header-title">Welcome back, <?php echo htmlspecialchars($_SESSION["first_name"]); ?>!</h1>
 
         <div class="dashboard-grid">
             <div class="dashboard-card">
@@ -102,7 +108,7 @@
                     <button class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
-            <button class="view-all-btn" onclick="window.location.href='shop.html'">View All Products</button>
+            <button class="view-all-btn" onclick="window.location.href='shop.php'">View All Products</button>
         </section>
     
         <section class="section-white faq-section">
@@ -144,10 +150,10 @@
             <div class="footer-columns">
                 <div class="footer-col">
                         <a class="footer-nav" style="font-weight: bold; letter-spacing: 2px;" >Shop</a>
-                        <a href="shop.html#cakes-section" class="footer-nav" >Cakes</a>
-                        <a href="shop.html#pastries-section" class="footer-nav" >Pastries</a>
-                        <a href="shop.html#cookies-section" class="footer-nav" >Cookies & Treats</a>
-                        <a href="shop.html#breads-section" class="footer-nav" >Breads</a>
+                        <a href="shop.php#cakes-section" class="footer-nav" >Cakes</a>
+                        <a href="shop.php#pastries-section" class="footer-nav" >Pastries</a>
+                        <a href="shop.php#cookies-section" class="footer-nav" >Cookies & Treats</a>
+                        <a href="shop.php#breads-section" class="footer-nav" >Breads</a>
                 </div>
                 <div class="footer-col">
                         <a class="footer-nav" style="font-weight: bold; letter-spacing: 2px;" >Company</a>

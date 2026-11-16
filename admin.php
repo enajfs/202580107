@@ -1,3 +1,7 @@
+<?php
+require "auth.php";
+require_admin();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,9 +21,9 @@
         <h1 class="hero-logo">Vonita Pastry</h1>
     </div>
             <nav>
-                <a href="homepage.html" class ="nav">(Home)</a>
+                <a href="homepage.php" class ="nav">(Home)</a>
                 <a href="index.html" class ="nav">(Landing)</a>
-                <a href="login.html" class ="nav">Log Out</a>
+                <a href="logout.php" class ="nav">Log Out</a>
             </nav>
 
             <button class="hamburger" aria-label="Menu">
@@ -27,9 +31,9 @@
            </button>
           </nav>
             <div class="mobile-menu">
-                <a href="homepage.html" class ="nav">(Home)</a>
+                <a href="homepage.php" class ="nav">(Home)</a>
                 <a href="index.html" class ="nav">(Landing)</a>
-                <a href="login.html" class ="nav">Log Out</a>
+                <a href="logout.php" class ="nav">Log Out</a>
             </div>
     </header>
 
@@ -71,10 +75,10 @@
             <div class="footer-columns">
                 <div class="footer-col">
                         <a class="footer-nav" style="font-weight: bold; letter-spacing: 2px;" >Shop</a>
-                        <a href="shop.html#cakes-section" class="footer-nav" >Cakes</a>
-                        <a href="shop.html#pastries-section" class="footer-nav" >Pastries</a>
-                        <a href="shop.html#cookies-section" class="footer-nav" >Cookies & Treats</a>
-                        <a href="shop.html#breads-section" class="footer-nav" >Breads</a>
+                        <a href="shop.php#cakes-section" class="footer-nav" >Cakes</a>
+                        <a href="shop.php#pastries-section" class="footer-nav" >Pastries</a>
+                        <a href="shop.php#cookies-section" class="footer-nav" >Cookies & Treats</a>
+                        <a href="shop.php#breads-section" class="footer-nav" >Breads</a>
                 </div>
                 <div class="footer-col">
                         <a class="footer-nav" style="font-weight: bold; letter-spacing: 2px;" >Company</a>
