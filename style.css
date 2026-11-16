@@ -1198,3 +1198,41 @@ body {
         text-align: center;
     }
 }
+
+/* ===== My Orders ===== */
+.orders-section {
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.orders-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.status-pending {
+    background-color: #fff4dc;
+    color: #9a6a00;
+}
+
+.status-completed {
+    background-color: #e3f6e8;
+    color: #2e7d46;
+}
+
+.status-cancelled {
+    background-color: #f8e1e1;
+    color: #a33a3a;
+}

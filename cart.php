@@ -16,6 +16,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($id > 0) {
             $_SESSION["cart"][$id] = ($_SESSION["cart"][$id] ?? 0) + 1;
         }
+        if (($_POST["from"] ?? "") === "homepage") {
+            header("Location: homepage.php?added=1#products");
+            exit;
+        }
         $category = preg_replace("/[^a-z]/", "", $_POST["category"] ?? "");
         header("Location: shop.php?added=1" . ($category ? "#" . $category . "-section" : ""));
         exit;
@@ -112,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && ($_POST["action"] ?? "") === "checko
             <nav>
                 <a href="index.html"class ="nav">(Landing)</a>
                 <a href="homepage.php" class ="nav">Home</a>
-                <a href="homepage.php#order" class ="nav">My Orders</a> 
+                <a href="homepage.php#my-orders" class ="nav">My Orders</a> 
                 <a href="index.html#about" class ="nav">About</a> 
                 <a href="index.html#contact" class ="nav">Contact Us</a>
                 <a href="cart.php" class ="nav">Cart (<?php echo cart_count(); ?>)</a>

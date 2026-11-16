@@ -24,7 +24,7 @@ include "db.php";
             <nav>
                 <a href="index.html"class ="nav">(Landing)</a>
                 <a href="homepage.php" class ="nav">Home</a>
-                <a href="homepage.php#order" class ="nav">My Orders</a> 
+                <a href="homepage.php#my-orders" class ="nav">My Orders</a> 
                 <a href="index.html#about" class ="nav">About</a> 
                 <a href="index.html#contact" class ="nav">Contact Us</a>
                 <a href="cart.php" class ="nav">Cart (<?php echo cart_count(); ?>)</a>
