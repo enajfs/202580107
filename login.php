@@ -83,6 +83,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <p>Log in to your account to place an order or check your order history.</p>
 
+            <?php if (isset($_GET["reset"])) { ?>
+                <p style="color: green;">Password updated! You can now log in with your new password.</p>
+            <?php } ?>
+
             <?php if (isset($_GET["registered"])) { ?>
                 <p style="color: green;">Account created! You can now log in.</p>
             <?php } ?>
@@ -105,7 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
                 </div>
 
-                <a href="forgot-password.html" class="auth-link">Forgot Password?</a>
+                <a href="forgot-password.php" class="auth-link">Forgot Password?</a>
 
                 <button type="submit" class="auth-btn">Log In</button>
 
