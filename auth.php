@@ -18,4 +18,7 @@ function require_admin() {
         exit;
     }
 }
+function cart_count() {
+    return isset($_SESSION["cart"]) ? array_sum($_SESSION["cart"]) : 0;
+}
 ?>

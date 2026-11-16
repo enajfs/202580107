@@ -27,6 +27,7 @@ include "db.php";
                 <a href="homepage.php#order" class ="nav">My Orders</a> 
                 <a href="index.html#about" class ="nav">About</a> 
                 <a href="index.html#contact" class ="nav">Contact Us</a>
+                <a href="cart.php" class ="nav">Cart (<?php echo cart_count(); ?>)</a>
                 <a href="logout.php" class ="nav">Log Out</a>
             </nav>
 
@@ -39,11 +40,15 @@ include "db.php";
                 <a href="shop.php" class ="nav">Shop</a> 
                 <a href="index.html#about" class ="nav">About</a> 
                 <a href="index.html#contact" class ="nav">Contact Us</a>
+                <a href="cart.php" class ="nav">Cart (<?php echo cart_count(); ?>)</a>
                 <a href="logout.php" class ="nav">Log Out</a>
             </div>
     </header>
 
         <section class="section-light">
+            <?php if (isset($_GET["added"])) { ?>
+                <p class="cart-notice">Added to your cart! <a href="cart.php">View cart</a></p>
+            <?php } ?>
             <nav class="category-tabs">
                 <button class="tab-arrow-left">&lt;</button>
                 <button class="tab-btn active" data-category="cakes">Cakes</button>
@@ -77,7 +82,12 @@ include "db.php";
                         <p class="product-title"><?php echo htmlspecialchars($product["name"]); ?></p>
                         <p class="product-description"><?php echo htmlspecialchars($product["description"]); ?></p>
                         <p class="product-price">Php<?php echo number_format($product["price"], 2); ?></p>
-                        <button class="add-to-cart-btn" data-product-id="<?php echo $product["id"]; ?>">Add to Cart</button>
+                        <form method="post" action="cart.php">
+                            <input type="hidden" name="action" value="add">
+                            <input type="hidden" name="product_id" value="<?php echo $product["id"]; ?>">
+                            <input type="hidden" name="category" value="<?php echo $key; ?>">
+                            <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                        </form>
                     </div>
                 <?php } ?>
                 </div>

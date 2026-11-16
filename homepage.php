@@ -26,6 +26,7 @@ require_login();
                 <a href="index.html#about" class ="nav">About</a> 
                 <a href="index.html#contact" class ="nav">Contact Us</a>
                 <a href="shop.php" class="nav-cta">Shop Now</a>
+                <a href="cart.php" class ="nav">Cart (<?php echo cart_count(); ?>)</a>
                 <a href="logout.php" class ="nav">Log Out</a>
             </nav>
 
@@ -39,6 +40,7 @@ require_login();
                 <a href="index.html#about" class ="nav">About</a> 
                 <a href="index.html#contact" class ="nav">Contact Us</a>
                 <a href="shop.php" class="nav">Shop Now</a>
+                <a href="cart.php" class ="nav">Cart (<?php echo cart_count(); ?>)</a>
                 <a href="logout.php" class ="nav">Log Out</a>
             </div>
     </header>
@@ -46,6 +48,9 @@ require_login();
  <main>
         <section class="section-white hero-section2" id="order">
     <div class="dashboard-container">
+        <?php if (isset($_GET["ordered"])) { ?>
+            <p class="cart-notice">Order #<?php echo (int) $_GET["ordered"]; ?> placed! We'll start preparing it soon.</p>
+        <?php } ?>
         <h1 class="header-title">Welcome back, <?php echo htmlspecialchars($_SESSION["first_name"]); ?>!</h1>
 
         <div class="dashboard-grid">
