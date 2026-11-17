@@ -24,8 +24,7 @@ include "db.php";
             <nav>
                 <a href="homepage.php" class ="nav">Home</a>
                 <a href="homepage.php#my-orders" class ="nav">My Orders</a> 
-                <a href="index.html#about" class ="nav">About</a> 
-                <a href="index.html#contact" class ="nav">Contact Us</a>
+                <a href="#footer" class ="nav">Contact Us</a>
                 <a href="cart.php" class ="nav">Cart (<?php echo cart_count(); ?>)</a>
                 <a href="logout.php" class ="nav">Log Out</a>
             </nav>
@@ -36,8 +35,7 @@ include "db.php";
             <div class="mobile-menu">
                  <a href="homepage.php" class ="nav">Home</a>
                 <a href="shop.php" class ="nav">Shop</a> 
-                <a href="index.html#about" class ="nav">About</a> 
-                <a href="index.html#contact" class ="nav">Contact Us</a>
+                <a href="#footer" class ="nav">Contact Us</a>
                 <a href="cart.php" class ="nav">Cart (<?php echo cart_count(); ?>)</a>
                 <a href="logout.php" class ="nav">Log Out</a>
             </div>
