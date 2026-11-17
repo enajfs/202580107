@@ -101,9 +101,7 @@ function two_digits($n) {
         <h1 class="hero-logo">Vonita Pastry</h1>
     </div>
             <nav>
-                <a href="homepage.php" class ="nav">(Home)</a>
                 <a href="#all-orders" class ="nav">Orders</a>
-                <a href="index.html" class ="nav">(Landing)</a>
                 <a href="logout.php" class ="nav">Log Out</a>
             </nav>
 
@@ -112,9 +110,7 @@ function two_digits($n) {
            </button>
           </nav>
             <div class="mobile-menu">
-                <a href="homepage.php" class ="nav">(Home)</a>
                 <a href="#all-orders" class ="nav">Orders</a>
-                <a href="index.html" class ="nav">(Landing)</a>
                 <a href="logout.php" class ="nav">Log Out</a>
             </div>
     </header>

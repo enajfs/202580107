@@ -60,7 +60,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <nav>
-            <a href="index.html" class="nav">(Landing)</a>
             <a href="login.php" class="nav">Log In</a>
             <a href="registration.php" class="nav">Sign Up</a>
         </nav>
@@ -70,7 +69,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </button>
 
         <div class="mobile-menu">
-            <a href="index.html" class="nav">(Landing)</a>
             <a href="login.php" class="nav">Log In</a>
             <a href="registration.php" class="nav">Sign Up</a>
         </div>
