@@ -33,7 +33,6 @@ include "db.php";
     <button class="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
            </button>
-          </nav>
             <div class="mobile-menu">
                  <a href="homepage.php" class ="nav">Home</a>
                 <a href="shop.php" class ="nav">Shop</a> 
@@ -129,7 +128,7 @@ include "db.php";
                 </div>
                 <div class="footer-col">
                         <a class="footer-nav" style="font-weight: bold; letter-spacing: 2px;" >Contact</a>
-                        <a class="footer-nav">Email: vonitapastry@gmail.com</p>
+                        <a class="footer-nav">Email: vonitapastry@gmail.com</a>
                         <a class="footer-nav">Phone: +63 912 345 6789</a>
                         <a class="footer-nav">Address: 123 Main Street, Puerto Princesa City, Palawan</a>
                 </div>
