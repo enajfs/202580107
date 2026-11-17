@@ -92,7 +92,7 @@ function two_digits($n) {
     </div>
             <nav>
                 <a href="#my-orders" class ="nav">My Orders</a> 
-                <a href="index.html#contact" class ="nav">Contact Us</a>
+                <a href="#footer" class ="nav">Contact Us</a>
                 <a href="shop.php" class="nav-cta">Shop Now</a>
                 <a href="cart.php" class ="nav">Cart (<?php echo cart_count(); ?>)</a>
                 <a href="logout.php" class ="nav">Log Out</a>
@@ -103,7 +103,7 @@ function two_digits($n) {
            </button>
             <div class="mobile-menu">
                 <a href="#my-orders" class ="nav">My Orders</a> 
-                <a href="index.html#contact" class ="nav">Contact Us</a>
+                <a href="#footer" class ="nav">Contact Us</a>
                 <a href="shop.php" class="nav">Shop Now</a>
                 <a href="cart.php" class ="nav">Cart (<?php echo cart_count(); ?>)</a>
                 <a href="logout.php" class ="nav">Log Out</a>
@@ -256,7 +256,7 @@ function two_digits($n) {
 </section>
     </main>
 
-    <footer>
+    <footer id="footer">
             <div class="footer-columns">
                 <div class="footer-col">
                         <a class="footer-nav" style="font-weight: bold; letter-spacing: 2px;" >Shop</a>
