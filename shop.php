@@ -95,7 +95,7 @@ include "db.php";
             ?>
         </section>
 
-        <footer>
+        <footer id="footer">
             <div class="footer-columns">
                 <div class="footer-col">
                         <a class="footer-nav" style="font-weight: bold; letter-spacing: 2px;" >Shop</a>
